@@ -19,12 +19,14 @@ Enter directory `cartographer_2d_demo`<br>
 mkdir build
 cd build
 cmake ..
+# cmake .. -DFORCE_DEBUG_BUILD=True -DCMAKE_BUILD_TYPE=Debug
 make
 ```
 # Run
 After building, excutable file `map_test` will be generated.<br>
 Run this project by:
 ```Bash
-./map_test ../configuration_files mapping_imu.lua ../data/imu_radar_replay ./map_output
+#./map_test ../configuration_files mapping_imu.lua ../data/imu_radar_replay ./map_output
+./map_test ../configuration_files mapping_imu.lua ../data/record_imu_radar ./map_output
 ```
 

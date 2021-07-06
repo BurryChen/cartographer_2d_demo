@@ -2,7 +2,8 @@ project(map_creator)
 
 cmake_minimum_required(VERSION 3.10)
 
-find_package(cartographer REQUIRED)
+#find_package(cartographer REQUIRED)
+find_package(cartographer REQUIRED PATHS "/home/chenshoubin/code_ws/obot_ws/install_isolated/share/cartographer")
 
 include("${CARTOGRAPHER_CMAKE_DIR}/functions.cmake")
 option(BUILD_GRPC "build features that require Cartographer gRPC support" false)
